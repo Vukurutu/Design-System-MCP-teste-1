@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #0f172a;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --border: #e2e8f0;
+    --background: #ffffff;
+    --foreground: #020617;
+
+    /* Spacing */
+    --spacing-0: 0px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+
+    /* Padding */
+    --padding-p-2: 8px;
+    --padding-p-3: 12px;
+
+    /* Gap */
+    --gap-1: 4px;
+    --gap-2: 8px;
+
+    /* Border Radius */
+    --rounded-md: 6px;
+
+    /* Typography */
+    --text-sm: 14px;
+    --leading-6: 24px;
+    --font-weight-font-medium: 500;
+    --font-family-font-sans: 'Geist', system-ui, sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
